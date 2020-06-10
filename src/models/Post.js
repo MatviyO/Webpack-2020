@@ -5,10 +5,10 @@ export default class Post {
         this.date = new Date()
     }
     toSting() {
-        JSON.stringify({
+       return JSON.stringify({
             title: this.title,
             date: this.date.toJSON(),
             img: this.img
-        })
+        }, null, 2)
     }
 }
